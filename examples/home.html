@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Home Dashboard
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="main-panel" style= "width:100%;">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="#pablo">Home Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            Date
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-sm">
+  
+  
+</div> -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"><i class="nc-icon nc-sun-fog-29"></i> Environmental Data</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card card-plain">
+<!--                       <div class="card-header">
+                        <h5 class="card-title">Environmental Data</h5>
+                      </div> -->
+                      <div class="card-body">
+                        <div class="table-responsive" style="overflow: hidden;">
+                          <table class="table">
+                            <thead class=" text-primary">
+                              <th>
+                                Location
+                              </th>
+                              <th>
+                                Forecast
+                              </th>
+                              <th class="text-right">
+                                Temperature
+                              </th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td id="location"></td>
+                                <td id="forecast"></td>
+                                <td id="temperature" class="text-right"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="alert alert-info alert-dismissible fade show" data-notify="container">
+                          <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                            <i class="nc-icon nc-simple-remove"></i>
+                          </button>
+                          Forecast last updated <span id="last-forecast-update" style="display:inline;">xx</span>.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"><i class="nc-icon nc-bus-front-12"></i> Bus Timings (Blk 180)</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                <div class="table-responsive" style="overflow: hidden;">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        Service No.
+                      </th>
+                      <th>
+                        Next Bus
+                      </th>
+                      <th>
+                        Following Bus
+                      </th>
+                      <th>
+                        Subsequent Bus
+                      </th>
+                    </thead>
+                    <tbody id="buses">
+<!--                       <tr>
+                        <td>
+                          Dakota Rice
+                        </td>
+                        <td>
+                          Niger
+                        </td>
+                        <td>
+                          Oud-Turnhout
+                        </td>
+                        <td>
+                          $36,738
+                        </td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="alert alert-info alert-dismissible fade show" data-notify="container">
+                  <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="nc-icon nc-simple-remove"></i>
+                  </button>
+                  Bus timings last updated <span id="last-bus-update" style="display:inline;">xx</span>.
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-user">
+              <div class="image">
+                <img src="../assets/img/damir-bosnjak.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="author">
+                  <a href="#">
+                    <img class="avatar border-gray" src="https://media.licdn.com/dms/image/C5103AQFRYGErlynlFg/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=7747q-UxaN004GZnK2eg7JCHzgbxgToMXMExagT47Uc" alt="...">
+                    <h5 class="title">Joel Huang</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-6 ml-auto">
+                      <h5>Some
+                        <br>
+                        <small>data here</small>
+                      </h5>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+                      <h5>Another
+                        <br>
+                        <small>data here</small>
+                      </h5>
+                    </div>
+                    <div class="col-lg-3 mr-auto">
+                      <h5>Last
+                        <br>
+                        <small>data here</small>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
+  <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>
